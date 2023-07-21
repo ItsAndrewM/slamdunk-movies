@@ -1,9 +1,28 @@
+:root {
+  --white: #FFFFFF;
+  --font-sm: 16px;
+  --font-med: 28px;
+  --font-lg: 32px;
+  --body-font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --gap-sm: 10px;
+  --gap-md: 16px;
+  --gap-lg: 24px;
+  --gap-xl: 36px;
+  --green: #64ffda;
+  --grey: #8892b0;
+  --blue: #03001C;
+  --green-tint: rgba(100, 255, 218, 0.1);
+  --teal: #00B2A9;
+  --orange: #E43C40;
+  --brown: #BC7844;
+  --black: #040204;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--body-font-family)
 }
 
 a {
