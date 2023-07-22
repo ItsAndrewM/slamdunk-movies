@@ -6,6 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-react-styled-components-qa": "^2.1.0",
     "date-fns": "^2.30.0",
     "gray-matter": "^4.0.3",
     "next": "latest",

@@ -1,10 +1,9 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
-
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Latest from "../components/latest";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData();
@@ -13,9 +12,7 @@ export const getStaticProps = async () => {
       allPostsData,
     },
   };
-}
-
-
+};
 
 const Home = ({ allPostsData }) => {
   return (
@@ -24,28 +21,36 @@ const Home = ({ allPostsData }) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>This is a sample introduction that I have written and am now finished writting with the conclusion of this sentence which is represented by a period or "." which I will put here.</p>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
+          This is a sample introduction that I have written and am now finished
+          writting with the conclusion of this sentence which is represented by
+          a period or "." which I will put here.
+        </p>
+        <p>
+          (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Recent Stories</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
+          {/* {allPostsData.map(({ id, date, title, index }) => ( */}
+          {allPostsData.map(({ id, date, title }, index) => {
+            return (
+              <Latest
+                id={id}
+                date={date}
+                title={title}
+                index={index}
+                key={index}
+              />
+            );
+          })}
         </ul>
+        <Link href={"/stories"}>→ More Stories</Link>
       </section>
     </Layout>
   );
-}
+};
 
 export default Home;

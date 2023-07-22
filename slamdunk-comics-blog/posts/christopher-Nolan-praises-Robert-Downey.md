@@ -35,20 +35,12 @@ We can only wait and see.
 
 ## Sources:
 
-: [Robert Downey Jr As Iron Man Was “Greatest Casting Decision In ...](https://bing.com/search?q=Christopher+Nolan+says+Robert+Downey+Jr+as+Iron+Man)
-
-: [Christopher Nolan feels Robert Downey Jr as Iron Man is best casting choice in film history](https://www.indiatoday.in/movies/hollywood/story/christopher-nolan-talks-about-robert-downey-jr-and-him-as-iron-man-was-the-best-casting-choice-2409993-2023-07-21)
-
-: [Christopher Nolan says Robert Downey Jr. as Iron Man is 'one of the greatest casting decisions in the history of movies'](https://ca.sports.yahoo.com/news/christopher-nolan-says-robert-downey-065242006.html)
-
-: [Who does Robert Downey Jr play in 'Oppenheimer'? Christopher Nolan praises 'Iron Man' star as 'one of the greatest casting decisions'](https://meaww.com/who-does-robert-downey-jr-play-in-oppenheimer-christopher-nolan-praises-iron-man-star-as-one-of-the-greatest-casting-decisions)
-
-: [Christopher Nolan praises Robert Downey Jr. in 'Iron Man'](https://faroutmagazine.co.uk/christopher-nolan-robert-downey-jr-iron-man-greatest-casting-decisions/)
-
-: [Christopher Nolan says Robert Downey Jr. as Iron Man is 'one of the ...](https://www.yahoo.com/entertainment/christopher-nolan-says-robert-downey-065242006.html)
-
-: [Robert Downey Jr. Worries His ‘Iron Man’ Role Will Affect His Acting Skills](https://www.nytimes.com/2023/07/08/movies/robert-downey-jr-interview.html)
-
-: [Christopher Nolan's Oppenheimer Casts Robert Downey Jr. in Key Role](https://screenrant.com/oppenheimer-movie-cast-robert-downey-jr-lewis-strauss/)
-
-: [Christopher Nolan’s ‘Oppenheimer’ Gets 2023 Release Date From Universal](https://variety.com/2023/film/news/christopher-nolan-oppenheimer-release-date-universal-1235069568/)
+- [Robert Downey Jr As Iron Man Was “Greatest Casting Decision In ...](https://bing.com/search?q=Christopher+Nolan+says+Robert+Downey+Jr+as+Iron+Man)
+- [Christopher Nolan feels Robert Downey Jr as Iron Man is best casting choice in film history](https://www.indiatoday.in/movies/hollywood/story/christopher-nolan-talks-about-robert-downey-jr-and-him-as-iron-man-was-the-best-casting-choice-2409993-2023-07-21)
+- [Christopher Nolan says Robert Downey Jr. as Iron Man is 'one of the greatest casting decisions in the history of movies'](https://ca.sports.yahoo.com/news/christopher-nolan-says-robert-downey-065242006.html)
+- [Who does Robert Downey Jr play in 'Oppenheimer'? Christopher Nolan praises 'Iron Man' star as 'one of the greatest casting decisions'](https://meaww.com/who-does-robert-downey-jr-play-in-oppenheimer-christopher-nolan-praises-iron-man-star-as-one-of-the-greatest-casting-decisions)
+- [Christopher Nolan praises Robert Downey Jr. in 'Iron Man'](https://faroutmagazine.co.uk/christopher-nolan-robert-downey-jr-iron-man-greatest-casting-decisions/)
+- [Christopher Nolan says Robert Downey Jr. as Iron Man is 'one of the ...](https://www.yahoo.com/entertainment/christopher-nolan-says-robert-downey-065242006.html)
+- [Robert Downey Jr. Worries His ‘Iron Man’ Role Will Affect His Acting Skills](https://www.nytimes.com/2023/07/08/movies/robert-downey-jr-interview.html)
+- [Christopher Nolan's Oppenheimer Casts Robert Downey Jr. in Key Role](https://screenrant.com/oppenheimer-movie-cast-robert-downey-jr-lewis-strauss/)
+- [Christopher Nolan’s ‘Oppenheimer’ Gets 2023 Release Date From Universal](https://variety.com/2023/film/news/christopher-nolan-oppenheimer-release-date-universal-1235069568/)

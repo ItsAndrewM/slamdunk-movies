@@ -31,10 +31,7 @@ Nolan's next film is Oppenheimer , a biographical drama about J. Robert Oppenhei
 
 ## Sources:
 
-: [Christopher Nolan Opens Up About What Fans Always Say About Star Wars That He Frankly Disagrees With | Cinemablend](https://www.cinemablend.com/star-wars/christopher-nolan-opens-up-fans-always-say-star-wars-disagrees-with)
-
-: [Christopher Nolan Hints That He Would Be Open To Directing Star Wars - MickeyBlog.com](https://mickeyblog.com/2023/07/20/christopher-nolan-hints-that-he-would-be-open-to-directing-star-wars/)
-
-: [‘Dunkirk’: How Christopher Nolan’s Visual Effects Team Pulled Off War Movie Magic | IndieWire](https://www.indiewire.com/awards/industry/dunkirk-christopher-nolans-visual-effects-oscar-1201913630/)
-
-: [Christopher Nolan Slams Hollywood's 'Willful Denial' of What Made Star Wars Popular | CBR](https://www.cbr.com/christopher-nolan-hollywood-denies-star-wars-success/)
+- [Christopher Nolan Opens Up About What Fans Always Say About Star Wars That He Frankly Disagrees With | Cinemablend](https://www.cinemablend.com/star-wars/christopher-nolan-opens-up-fans-always-say-star-wars-disagrees-with)
+- [Christopher Nolan Hints That He Would Be Open To Directing Star Wars - MickeyBlog.com](https://mickeyblog.com/2023/07/20/christopher-nolan-hints-that-he-would-be-open-to-directing-star-wars/)
+- [‘Dunkirk’: How Christopher Nolan’s Visual Effects Team Pulled Off War Movie Magic | IndieWire](https://www.indiewire.com/awards/industry/dunkirk-christopher-nolans-visual-effects-oscar-1201913630/)
+- [Christopher Nolan Slams Hollywood's 'Willful Denial' of What Made Star Wars Popular | CBR](https://www.cbr.com/christopher-nolan-hollywood-denies-star-wars-success/)
