@@ -1,5 +1,6 @@
 ---
 title: "Mark Ronson Tells All on Crafting the Biggest Movie Soundtrack of the Year for Barbie"
+genre: "movies"
 date: "2023-07-22"
 ---
 

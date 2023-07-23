@@ -1,5 +1,6 @@
 ---
 title: "Christopher Nolan on Star Wars: A Great Story and an Incredible Visual Experience"
+genre: "movies"
 date: "2023-07-21"
 ---
 

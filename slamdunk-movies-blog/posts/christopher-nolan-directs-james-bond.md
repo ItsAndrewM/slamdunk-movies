@@ -1,5 +1,6 @@
 ---
 title: "Christopher Nolan Expresses His Interest in Directing a James Bond Movie"
+genre: "movies"
 date: "2023-07-22"
 ---
 

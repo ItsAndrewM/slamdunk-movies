@@ -1,5 +1,6 @@
 ---
 title: "Greta Gerwig Refused to Cut Her Favorite Barbie Scene: 'It Was the Heart of the Movie'"
+genre: "movies"
 date: "2023-07-22"
 ---
 

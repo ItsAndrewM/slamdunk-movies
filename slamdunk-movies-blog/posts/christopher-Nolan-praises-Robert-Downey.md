@@ -1,5 +1,6 @@
 ---
 title: "Christopher Nolan praises Robert Downey Jr. as Iron Man"
+genre: "movies"
 date: "2023-07-21"
 ---
 
