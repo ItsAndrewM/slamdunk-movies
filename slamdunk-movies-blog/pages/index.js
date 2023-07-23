@@ -35,13 +35,14 @@ const Home = ({ allPostsData }) => {
         <h2 className={utilStyles.headingLg}>Recent Stories</h2>
         <ul className={utilStyles.list}>
           {/* {allPostsData.map(({ id, date, title, index }) => ( */}
-          {allPostsData.map(({ id, date, title }, index) => {
+          {allPostsData.map(({ id, date, title, genre }, index) => {
             return (
               <Latest
                 id={id}
                 date={date}
                 title={title}
                 index={index}
+                genre={genre}
                 key={index}
               />
             );

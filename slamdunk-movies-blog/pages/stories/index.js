@@ -17,10 +17,10 @@ const Page = ({ allPostsData }) => {
   return (
     <Layout>
       <section>
-        {allPostsData.map(({ id, date, title }, index) => {
+        {allPostsData.map(({ id, date, title, genre }, index) => {
           return (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/stories/${id}`}>{title}</Link>
+              <Link href={`/stories/${genre}/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
                 <Date dateString={date} />
