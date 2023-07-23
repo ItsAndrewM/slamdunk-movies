@@ -17,3 +17,12 @@
 .backToHome {
   margin: 3rem 0 0;
 }
+
+.smallContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2em;
+  text-transform: capitalize;
+}

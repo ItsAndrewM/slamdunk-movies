@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Date from "./date";
 import utilStyles from "../styles/utils.module.css";
+import layoutStyles from "./layout.module.css";
 
 const Latest = ({ id, date, title, genre, index }) => {
   return (
@@ -8,9 +9,14 @@ const Latest = ({ id, date, title, genre, index }) => {
       <li className={utilStyles.listItem} key={id}>
         <Link href={`/stories/${genre}/${id}`}>{title}</Link>
         <br />
-        <small className={utilStyles.lightText}>
-          <Date dateString={date} />
-        </small>
+        <div className={layoutStyles.smallContainer}>
+          <small className={utilStyles.lightText}>
+            <Date dateString={date} />
+          </small>
+          <Link href={`/stories/${genre}`}>
+            <small className={utilStyles.lightText}>{genre}</small>
+          </Link>
+        </div>
       </li>
     )
   );
