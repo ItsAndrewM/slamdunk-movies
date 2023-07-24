@@ -20,7 +20,8 @@ const Home = ({ allPostsData }) => {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        {/* <!-- Google tag (gtag.js) --> */}
+      </Head>
+      <div>        {/* <!-- Google tag (gtag.js) --> */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"></Script>
         <Script id="google-analytics">
           {`
@@ -29,8 +30,7 @@ const Home = ({ allPostsData }) => {
               gtag('js', new Date());
 
               gtag('config', 'G-82XEENDSWT');`}
-        </Script>
-      </Head>
+        </Script></div>
       <section className={utilStyles.headingMd}>
         <p>
           This is a sample introduction that I have written and am now finished
