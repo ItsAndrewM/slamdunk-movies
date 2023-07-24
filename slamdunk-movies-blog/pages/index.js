@@ -21,7 +21,8 @@ const Home = ({ allPostsData }) => {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div>        {/* <!-- Google tag (gtag.js) --> */}
+      <div className="google-analytics-container">
+        {/* <!-- Google tag (gtag.js) --> */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"></Script>
         <Script id="google-analytics">
           {`
