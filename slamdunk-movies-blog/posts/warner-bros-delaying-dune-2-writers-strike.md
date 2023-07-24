@@ -1,6 +1,7 @@
 ---
 title: "Warner Bros is looking at delaying Dune 2 until 2024 because of the writers strike"
 genre: "movies"
+author: "Andrew McMillan"
 date: "2023-07-21"
 ---
 

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid var(--black);
+  margin-bottom: 1em;
 }
 
 .container {
@@ -20,5 +22,4 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }

@@ -1,6 +1,7 @@
 ---
 title: "Christopher Nolan on the 'correct answer' to the Inception ending"
 genre: "movies"
+author: "Andrew McMillan"
 date: "2023-07-22"
 ---
 

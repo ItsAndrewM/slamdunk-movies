@@ -1,7 +1,14 @@
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+import { getAllPostIds, getSortedPostsData } from "../../lib/posts";
+import Layout from "../../components/layout";
+import Post from "../../components/post";
+import utilStyles from "../../styles/utils.module.css";
+import Recent from "../../components/recent";
+import recentStyles from "../../styles/recent.module.css"
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData();
+
   return {
     props: {
       allPostsData,
@@ -10,25 +17,49 @@ export const getStaticProps = async () => {
 };
 
 const Genre = ({ allPostsData }) => {
-  const router = useRouter();
-  console.log(router.asPath);
+  const pathname = usePathname();
+  const split = pathname.split("/")[pathname.split("/").length - 1];
+
+  const filtered = allPostsData.filter((posts) => {
+    return posts.genre === split;
+  });
+
   return (
     <Layout>
-      <section>
-        {allPostsData.map(({ id, date, title, genre }, index) => {
+      <ul className={utilStyles.list}>
+        {/* {allPostsData.map(({ id, date, title, index }) => ( */}
+        {filtered.map(({ id, date, title, genre }, index) => {
           return (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/stories/${genre}/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+            <Post
+              id={id}
+              date={date}
+              title={title}
+              genre={genre}
+              key={index}
+            />
           );
         })}
+      </ul>
+      <section>
+        <h2>Check out some recent stories</h2>
+        <Recent props={allPostsData} count={5} />
+
       </section>
-    </Layout>
-  );
+    </Layout>)
 };
 
 export default Genre;
+
+export const getStaticPaths = async () => {
+  // Return a list of possible value for id
+  const slugs = getAllPostIds();
+  const paths = slugs.map((slug) => {
+    return {
+      params: { genre: slug.params.genre }
+    }
+  })
+  return {
+    paths,
+    fallback: false,
+  };
+};

@@ -7,6 +7,8 @@ import {
 import Head from "next/head";
 import Date from "../../../components/date";
 import utilStyles from "../../../styles/utils.module.css";
+import layoutStyles from "../../../components/layout.module.css"
+import Link from "next/link";
 
 const Post = ({ postData }) => {
   return (
@@ -14,12 +16,15 @@ const Post = ({ postData }) => {
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <article className={layoutStyles.wrapper}>
+        <div className={utilStyles.lightText} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "60%" }}>
           <Date dateString={postData.date} />
+          <Link href={`/stories/${postData.genre}`}>
+            <small className={utilStyles.lightText} style={{ textTransform: "capitalize" }}>{postData.genre}</small>
+          </Link>
+          <small className={utilStyles.lightText}>{postData.author}</small>
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div className={layoutStyles.postWrapper} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
     </Layout>
   );

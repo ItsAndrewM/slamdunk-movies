@@ -1,6 +1,7 @@
 ---
 title: "Oppenheimer Shines at the Box Office with $10.5M in Thursday Previews"
 genre: "movies"
+author: "Andrew McMillan"
 date: "2023-07-22"
 ---
 

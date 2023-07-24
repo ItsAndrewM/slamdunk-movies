@@ -3,8 +3,11 @@ import sdmovies from "../public/sdmovies.svg";
 import Image from "next/image";
 import navbarStyles from "../styles/navbar.module.css";
 import utilStyles from "../styles/utils.module.css";
+import layoutStyles from "./layout.module.css"
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
   return (
     <header className={navbarStyles.navbarWrapper}>
       <Link href={"/"}>
@@ -18,19 +21,19 @@ const Navbar = () => {
       <div className={navbarStyles.container}>
         <ul className={navbarStyles.navList}>
           <li className={navbarStyles.listItem}>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} className={pathname == "/" ? layoutStyles.active : layoutStyles.link}>Home</Link>
           </li>
           <li>
-            <Link href={"/stories"}>Stories</Link>
+            <Link href={"/stories"} className={pathname == "/stories" ? layoutStyles.active : layoutStyles.link}>Stories</Link>
           </li>
           <li>
-            <Link href={"/stories/movies"}>Movies</Link>
+            <Link href={"/stories/movies"} className={pathname == "/stories/movies" ? layoutStyles.active : layoutStyles.link}>Movies</Link>
           </li>
           <li>
-            <Link href={"/stories/movies"}>Comics</Link>
+            <Link href={"/stories/comics"} className={pathname == "/stories/comics" ? layoutStyles.active : layoutStyles.link}>Comics</Link>
           </li>
           <li>
-            <Link href={"/stories/movies"}>TV Shows</Link>
+            <Link href={"/stories/tv-shows"} className={pathname == "/stories/tv-shows" ? layoutStyles.active : layoutStyles.link}>TV Shows</Link>
           </li>
         </ul>
       </div>

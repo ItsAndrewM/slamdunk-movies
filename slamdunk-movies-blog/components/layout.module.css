@@ -1,10 +1,10 @@
 .container {
   width: 100vw;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 100vw;
   padding: 0 1rem;
 }
 
@@ -15,7 +15,11 @@
 }
 
 .backToHome {
+  width: 100%;
   margin: 3rem 0 0;
+  display: flex;
+  justify-content: flex-start;
+
 }
 
 .smallContainer {
@@ -25,4 +29,108 @@
   align-items: center;
   gap: 2em;
   text-transform: capitalize;
+}
+
+.postWrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.postWrapper p>img {
+  height: 600px;
+}
+
+.postWrapper p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.postWrapper a {
+  position: relative;
+  transition: color .3s ease-in-out;
+}
+
+.postWrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+}
+
+.postWrapper a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 1px;
+  background-color: var(--teal);
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.postWrapper a:hover {
+  color: var(--teal);
+}
+
+.postWrapper a:hover::before {
+  transform: scaleX(1);
+}
+
+.postWrapper>h2,
+.postWrapper>h1 {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link,
+.smallLink {
+  position: relative;
+  transition: color .3s ease-in-out;
+}
+
+.link::before,
+.smallLink::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.link::before {
+  background-color: var(--teal);
+}
+
+.smallLink::before {
+  background-color: var(--lightGrey);
+}
+
+.link:hover {
+  color: var(--teal);
+}
+
+.link:hover::before,
+.smallLink:hover::before {
+  transform: scaleX(1);
+}
+
+.smallLink:hover {
+  color: var(--lightGrey);
+}
+
+.active {
+  color: var(--teal);
+  border-bottom: 1px solid var(--teal);
 }

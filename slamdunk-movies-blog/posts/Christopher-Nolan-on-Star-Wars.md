@@ -1,6 +1,7 @@
 ---
 title: "Christopher Nolan on Star Wars: A Great Story and an Incredible Visual Experience"
 genre: "movies"
+author: "Andrew McMillan"
 date: "2023-07-21"
 ---
 

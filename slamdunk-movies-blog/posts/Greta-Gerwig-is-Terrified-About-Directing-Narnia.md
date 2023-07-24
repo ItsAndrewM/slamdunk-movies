@@ -1,6 +1,7 @@
 ---
 title: "Greta Gerwig is 'Terrified' About Directing Narnia Movies for Netflix After Barbie"
 genre: "movies"
+author: "Andrew McMillan"
 date: "2023-07-22"
 ---
 
