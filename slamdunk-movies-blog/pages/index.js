@@ -22,7 +22,7 @@ const Home = ({ allPostsData }) => {
         <title>{siteTitle}</title>
       </Head>
       <div>        {/* <!-- Google tag (gtag.js) --> */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"></Script>
         <Script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
