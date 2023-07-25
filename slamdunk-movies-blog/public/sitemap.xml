@@ -9,67 +9,92 @@
 
 <url>
   <loc>https://www.slamdunkmovies.com/</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.slamdunkmovies.com/stories/movies</loc>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.slamdunkmovies.com/stories/comics</loc>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.slamdunkmovies.com/stories/tv-shows</loc>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.slamdunkmovies.com/stories/tv-shows/meet-the-new-generation-of-supes</loc>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.slamdunkmovies.com/stories/comics/aquaman-and-the-lost-kingdom</loc>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/oppenheimer-shines-at-box-office</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/nolan-inception-ending</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/mark-ronson-tells-all</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/greta-gerwig-refused-to-cut-fav-scene</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/christopher-nolan-directs-james-bond</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/barbie-breaks-box-office</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/SAG-AFTRA-Chief-Negotiator-On-Indie-Movies-Can-Promote-At-Fall-Film-Festivals</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/Greta-Gerwig-is-Terrified-About-Directing-Narnia</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/warner-bros-delaying-dune-2-writers-strike</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/christopher-Nolan-praises-Robert-Downey</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://www.slamdunkmovies.com/stories/movies/Christopher-Nolan-on-Star-Wars</loc>
-  <lastmod>2023-07-23T17:17:50+00:00</lastmod>
+  <lastmod>2023-07-25T22:58:20+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
