@@ -7,13 +7,15 @@ const Latest = ({ id, date, title, genre, index }) => {
   return (
     index < 5 && (
       <li className={utilStyles.listItem} key={id}>
-        <Link href={`/stories/${genre}/${id}`}>{title}</Link>
+        <Link href={`/stories/${genre}/${id}`} className={layoutStyles.link}>
+          {title}
+        </Link>
         <br />
         <div className={layoutStyles.smallContainer}>
           <small className={utilStyles.lightText}>
             <Date dateString={date} />
           </small>
-          <Link href={`/stories/${genre}`}>
+          <Link href={`/stories/${genre}`} className={layoutStyles.smallLink}>
             <small className={utilStyles.lightText}>{genre}</small>
           </Link>
         </div>

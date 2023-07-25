@@ -5,7 +5,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 1rem;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1em;
+  gap: 0.5em;
 }
 
 .header {
@@ -15,11 +32,10 @@
 }
 
 .backToHome {
-  width: 100%;
-  margin: 3rem 0 0;
+  width: 60%;
   display: flex;
   justify-content: flex-start;
-
+  padding-bottom: 1em;
 }
 
 .smallContainer {
@@ -38,7 +54,7 @@
   gap: 1em;
 }
 
-.postWrapper p>img {
+.postWrapper p > img {
   height: 600px;
 }
 
@@ -50,24 +66,24 @@
 
 .postWrapper a {
   position: relative;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .postWrapper ul {
   display: flex;
   flex-direction: column;
-  gap: .3em;
+  gap: 0.3em;
 }
 
 .postWrapper a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   width: 100%;
   height: 1px;
   background-color: var(--teal);
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .postWrapper a:hover {
@@ -78,8 +94,8 @@
   transform: scaleX(1);
 }
 
-.postWrapper>h2,
-.postWrapper>h1 {
+.postWrapper > h2,
+.postWrapper > h1 {
   width: 100%;
   border-bottom: 1px solid black;
 }
@@ -95,18 +111,18 @@
 .link,
 .smallLink {
   position: relative;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .link::before,
 .smallLink::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   width: 100%;
   height: 1px;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .link::before {

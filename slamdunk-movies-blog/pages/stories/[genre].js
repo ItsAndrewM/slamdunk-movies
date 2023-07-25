@@ -4,7 +4,7 @@ import Layout from "../../components/layout";
 import Post from "../../components/post";
 import utilStyles from "../../styles/utils.module.css";
 import Recent from "../../components/recent";
-import recentStyles from "../../styles/recent.module.css"
+import layoutStyles from "../../components/layout.module.css";
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData();
@@ -26,26 +26,33 @@ const Genre = ({ allPostsData }) => {
 
   return (
     <Layout>
-      <ul className={utilStyles.list}>
-        {/* {allPostsData.map(({ id, date, title, index }) => ( */}
-        {filtered.map(({ id, date, title, genre }, index) => {
-          return (
-            <Post
-              id={id}
-              date={date}
-              title={title}
-              genre={genre}
-              key={index}
-            />
-          );
-        })}
-      </ul>
-      <section>
-        <h2>Check out some recent stories</h2>
-        <Recent props={allPostsData} count={5} />
-
+      <section className={layoutStyles.section}>
+        <h2 className={`${utilStyles.sectionHeader} ${utilStyles.capitalize}`}>
+          {pathname.split("/")[pathname.split("/").length - 1]}
+        </h2>
+        <ul className={utilStyles.list}>
+          {/* {allPostsData.map(({ id, date, title, index }) => ( */}
+          {filtered.map(({ id, date, title, genre }, index) => {
+            return (
+              <Post
+                id={id}
+                date={date}
+                title={title}
+                genre={genre}
+                key={index}
+              />
+            );
+          })}
+        </ul>
       </section>
-    </Layout>)
+      <section className={layoutStyles.section}>
+        <h2 className={utilStyles.sectionHeader}>
+          Check out some recent stories
+        </h2>
+        <Recent props={allPostsData} count={5} />
+      </section>
+    </Layout>
+  );
 };
 
 export default Genre;
@@ -55,9 +62,9 @@ export const getStaticPaths = async () => {
   const slugs = getAllPostIds();
   const paths = slugs.map((slug) => {
     return {
-      params: { genre: slug.params.genre }
-    }
-  })
+      params: { genre: slug.params.genre },
+    };
+  });
   return {
     paths,
     fallback: false,

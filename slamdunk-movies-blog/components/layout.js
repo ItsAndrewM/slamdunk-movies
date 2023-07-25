@@ -28,10 +28,12 @@ const Layout = ({ children, home }) => {
       </Head>
 
       <Navbar />
-      <main>{children}</main>
+      <main className={styles.main}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/" className={styles.smallLink}>
+            ← Back to home
+          </Link>
         </div>
       )}
     </div>

@@ -5,6 +5,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Latest from "../components/latest";
 import Link from "next/link";
 import Script from "next/script";
+import layoutStyles from "../components/layout.module.css";
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData();
@@ -23,7 +24,10 @@ const Home = ({ allPostsData }) => {
       </Head>
       <div className="google-analytics-container">
         {/* <!-- Google tag (gtag.js) --> */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"></Script>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-82XEENDSWT"
+        ></Script>
         <Script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
@@ -31,20 +35,14 @@ const Home = ({ allPostsData }) => {
               gtag('js', new Date());
 
               gtag('config', 'G-82XEENDSWT');`}
-        </Script></div>
-      <section className={utilStyles.headingMd}>
-        <p>
-          This is a sample introduction that I have written and am now finished
-          writting with the conclusion of this sentence which is represented by
-          a period or "." which I will put here.
-        </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Recent Stories</h2>
+        </Script>
+      </div>
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}
+      >
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.sectionHeader}`}>
+          Recent Stories
+        </h2>
         <ul className={utilStyles.list}>
           {/* {allPostsData.map(({ id, date, title, index }) => ( */}
           {allPostsData.map(({ id, date, title, genre }, index) => {
@@ -60,7 +58,7 @@ const Home = ({ allPostsData }) => {
             );
           })}
         </ul>
-        <Link href={"/stories"}>→ More Stories</Link>
+        <Link href={"/stories"}>More Stories →</Link>
       </section>
     </Layout>
   );
