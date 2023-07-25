@@ -3,6 +3,7 @@ title: "Aquaman and the Lost Kingdom: DC Reveals New Comic Book That Sets Up the
 genre: "comics"
 author: "Andrew McMillan"
 date: "2023-07-24"
+thumbnail: "/images/aquaman-lost-kingdom.jpg"
 ---
 
 # Aquaman and the Lost Kingdom: DC Reveals New Comic Book That Sets Up the Movie Sequel

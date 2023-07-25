@@ -3,6 +3,7 @@ title: "Greta Gerwig is 'Terrified' About Directing Narnia Movies for Netflix Af
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/Greta-Gerwig-Chronicles-Of-Narnia.jpg"
 ---
 
 # Greta Gerwig is "Terrified" About Directing Narnia Movies for Netflix After Barbie

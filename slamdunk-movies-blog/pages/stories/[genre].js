@@ -26,7 +26,9 @@ const Genre = ({ allPostsData }) => {
 
   return (
     <Layout>
-      <section className={layoutStyles.section}>
+      <section
+        className={`${layoutStyles.section} ${utilStyles.storiesHeight}`}
+      >
         <h2 className={`${utilStyles.sectionHeader} ${utilStyles.capitalize}`}>
           {pathname.split("/")[pathname.split("/").length - 1]}
         </h2>

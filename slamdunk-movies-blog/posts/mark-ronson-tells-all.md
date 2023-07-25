@@ -3,6 +3,7 @@ title: "Mark Ronson Tells All on Crafting the Biggest Movie Soundtrack of the Ye
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/mark-ronson-barbie.jpg"
 ---
 
 # Mark Ronson Tells All on Crafting the Biggest Movie Soundtrack of the Year for Barbie

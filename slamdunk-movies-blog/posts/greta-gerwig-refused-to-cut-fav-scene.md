@@ -3,6 +3,7 @@ title: "Greta Gerwig Refused to Cut Her Favorite Barbie Scene: 'It Was the Heart
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/greta-gerwig-margot-robbie-barbie.webp"
 ---
 
 # Greta Gerwig Refused to Cut Her Favorite Barbie Scene: "It Was the Heart of the Movie"

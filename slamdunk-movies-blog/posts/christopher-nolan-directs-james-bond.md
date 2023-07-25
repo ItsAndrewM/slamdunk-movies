@@ -3,6 +3,7 @@ title: "Christopher Nolan Expresses His Interest in Directing a James Bond Movie
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/christopher-nolan-james-bond-movie.jpg"
 ---
 
 # Christopher Nolan Expresses His Interest in Directing a James Bond Movie

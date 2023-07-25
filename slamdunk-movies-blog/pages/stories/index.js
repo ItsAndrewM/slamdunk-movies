@@ -25,13 +25,14 @@ const Page = ({ allPostsData }) => {
         </h2>
         <ul className={utilStyles.list}>
           {/* {allPostsData.map(({ id, date, title, index }) => ( */}
-          {allPostsData.map(({ id, date, title, genre }, index) => {
+          {allPostsData.map(({ id, date, title, genre, thumbnail }, index) => {
             return (
               <Post
                 id={id}
                 date={date}
                 title={title}
                 genre={genre}
+                thumbnail={thumbnail}
                 key={index}
               />
             );

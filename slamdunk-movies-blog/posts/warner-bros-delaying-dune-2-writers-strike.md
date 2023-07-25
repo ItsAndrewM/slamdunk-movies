@@ -3,6 +3,7 @@ title: "Warner Bros is looking at delaying Dune 2 until 2024 because of the writ
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-21"
+thumbnail: "/images/Dune-2-Color-Purple-Aquaman-2.webp"
 ---
 
 # Warner Bros is looking at delaying Dune 2 until 2024 because of the writers strike

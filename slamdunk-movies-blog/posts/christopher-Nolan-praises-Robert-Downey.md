@@ -3,6 +3,7 @@ title: "Christopher Nolan praises Robert Downey Jr. as Iron Man"
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-21"
+thumbnail: "/images/robert-downey-jr-christopher-nolan.jpg"
 ---
 
 # Christopher Nolan praises Robert Downey Jr. as Iron Man

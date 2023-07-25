@@ -7,8 +7,9 @@ import {
 import Head from "next/head";
 import Date from "../../../components/date";
 import utilStyles from "../../../styles/utils.module.css";
-import layoutStyles from "../../../components/layout.module.css"
+import layoutStyles from "../../../components/layout.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 const Post = ({ postData }) => {
   return (
@@ -17,14 +18,33 @@ const Post = ({ postData }) => {
         <title>{postData.title}</title>
       </Head>
       <article className={layoutStyles.wrapper}>
-        <div className={utilStyles.lightText} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "60%" }}>
+        <div
+          className={utilStyles.lightText}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            width: "60%",
+          }}
+        >
           <Date dateString={postData.date} />
           <Link href={`/stories/${postData.genre}`}>
-            <small className={utilStyles.lightText} style={{ textTransform: "capitalize" }}>{postData.genre}</small>
+            <small
+              className={utilStyles.lightText}
+              style={{ textTransform: "capitalize" }}
+            >
+              {postData.genre}
+            </small>
           </Link>
           <small className={utilStyles.lightText}>{postData.author}</small>
         </div>
-        <div className={layoutStyles.postWrapper} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div>
+          <Image src={postData.thumbnail} height={500} width={400} />
+        </div>
+        <div
+          className={layoutStyles.postWrapper}
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+        />
       </article>
     </Layout>
   );

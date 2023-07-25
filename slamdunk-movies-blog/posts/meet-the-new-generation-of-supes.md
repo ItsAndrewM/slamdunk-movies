@@ -3,6 +3,7 @@ title: "Meet the New Generation of Supes in Gen V: the Action-Packed Spinoff of 
 genre: "tv-shows"
 author: "Andrew McMillan"
 date: "2023-07-24"
+thumbnail: "/images/gen-v.jpg"
 ---
 
 # Meet the New Generation of Supes in Gen V: the Action-Packed Spinoff of The Boys

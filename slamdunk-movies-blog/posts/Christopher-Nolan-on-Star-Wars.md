@@ -3,6 +3,7 @@ title: "Christopher Nolan on Star Wars: A Great Story and an Incredible Visual E
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-21"
+thumbnail: "/images/nolan-star-wars.webp"
 ---
 
 # Christopher Nolan on Star Wars: A Great Story and an Incredible Visual Experience

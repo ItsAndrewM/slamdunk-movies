@@ -60,3 +60,15 @@
 .capitalize {
   text-transform: capitalize;
 }
+
+.storiesHeight {
+  min-height: 600px;
+}
+
+.imageContain {
+  object-fit: contain;
+}
+
+.imageCover {
+  object-fit: cover;
+}

@@ -3,6 +3,7 @@ title: "SAG-AFTRA Chief Negotiator On Whether Stars Of Indie Movies Can Promote 
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/sag-aftra-negotiator.jpeg"
 ---
 
 # SAG-AFTRA Chief Negotiator On Whether Stars Of Indie Movies Can Promote At Fall Film Festivals

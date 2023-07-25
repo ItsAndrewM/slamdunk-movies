@@ -3,6 +3,7 @@ title: "Barbie Breaks the Box Office with $22.3M in Thursday Previews"
 genre: "movies"
 author: "Andrew McMillan"
 date: "2023-07-22"
+thumbnail: "/images/barbie-break-box-office.jpg"
 ---
 
 # Barbie Breaks the Box Office with $22.3M in Thursday Previews
