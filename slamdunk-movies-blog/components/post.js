@@ -21,7 +21,7 @@ const Post = ({ id, date, title, genre, thumbnail }) => {
           </Link>
         </div>
       </div>
-      <Link href={`/stories/${genre}/${id}`}>
+      <Link href={`/stories/${genre}/${id}`} className={layoutStyles.imageLink}>
         <Image
           className={utilStyles.imageCover}
           src={thumbnail}

@@ -45,6 +45,39 @@
   align-items: center;
 }
 
+.bannerList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .25em;
+
+}
+
+.bannerItem {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 296px;
+  height: 175px;
+  max-height: 175px;
+  color: white;
+  padding: 0 .25em;
+}
+
+.imageLink {
+  transition: 0.3s ease-in-out;
+}
+
+.imageLink:hover {
+  opacity: .7;
+}
+
+.bannerItem small {
+  color: white;
+}
+
 .backToHome {
   width: 60%;
   display: flex;
@@ -68,7 +101,7 @@
   gap: 1em;
 }
 
-.postWrapper p > img {
+.postWrapper p>img {
   height: 600px;
 }
 
@@ -107,8 +140,8 @@
   transform: scaleX(1);
 }
 
-.postWrapper > h2,
-.postWrapper > h1 {
+.postWrapper>h2,
+.postWrapper>h1 {
   width: 100%;
   border-bottom: 1px solid black;
 }

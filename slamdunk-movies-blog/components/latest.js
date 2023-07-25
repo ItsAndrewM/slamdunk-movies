@@ -25,7 +25,7 @@ const Latest = ({ id, date, title, genre, index, thumbnail }) => {
             </Link>
           </div>
         </div>
-        <Link href={`/stories/${genre}/${id}`}>
+        <Link href={`/stories/${genre}/${id}`} className={layoutStyles.imageLink}>
           <Image
             className={utilStyles.imageCover}
             src={thumbnail}

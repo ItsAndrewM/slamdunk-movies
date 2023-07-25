@@ -72,3 +72,7 @@
 .imageCover {
   object-fit: cover;
 }
+
+.spaceBetween {
+  justify-content: space-between;
+}

@@ -6,6 +6,8 @@ import Latest from "../components/latest";
 import Link from "next/link";
 import Script from "next/script";
 import layoutStyles from "../components/layout.module.css";
+import TopStories from "../components/topStories";
+import Post from "../components/post";
 
 export const getStaticProps = async () => {
   const allPostsData = getSortedPostsData();
@@ -37,17 +39,37 @@ const Home = ({ allPostsData }) => {
               gtag('config', 'G-82XEENDSWT');`}
         </Script>
       </div>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}>
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.sectionHeader}`}>
+          Top Stories
+        </h2>
+        <ul className={`${utilStyles.list} ${layoutStyles.bannerList}`}>
+          {allPostsData.map(({ id, date, title, genre, thumbnail }, index) => {
+            return (
+              <TopStories
+                id={id}
+                date={date}
+                title={title}
+                index={index}
+                genre={genre}
+                thumbnail={thumbnail}
+                key={index}
+              />
+            );
+          })}
+        </ul>
+      </section>
       <section
         className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}
       >
         <h2 className={`${utilStyles.headingLg} ${utilStyles.sectionHeader}`}>
-          Recent Stories
+          Latest Stories
         </h2>
         <ul className={utilStyles.list}>
           {/* {allPostsData.map(({ id, date, title, index }) => ( */}
-          {allPostsData.map(({ id, date, title, genre, thumbnail }, index) => {
+          {allPostsData.slice(4, 9).map(({ id, date, title, genre, thumbnail }, index) => {
             return (
-              <Latest
+              <Post
                 id={id}
                 date={date}
                 title={title}
