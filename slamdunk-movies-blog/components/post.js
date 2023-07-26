@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Post = ({ id, date, title, genre, thumbnail }) => {
   return (
-    <li className={`${utilStyles.listItem} ${layoutStyles.listItem}`} key={id}>
+    <li className={`${utilStyles.listItem} ${layoutStyles.listItem} ${utilStyles.headingMd}`} key={id}>
       <div className={layoutStyles.insideList}>
         <Link href={`/stories/${genre}/${id}`} className={layoutStyles.link}>
           {title}

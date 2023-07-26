@@ -39,6 +39,8 @@
   gap: 0.5em;
 }
 
+@media (max-width: 600px) {}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -53,6 +55,8 @@
   gap: .25em;
 
 }
+
+
 
 .bannerItem {
   background-position: center;
@@ -84,6 +88,8 @@
   justify-content: flex-start;
   padding-bottom: 1em;
 }
+
+
 
 .smallContainer {
   width: 100%;
@@ -195,4 +201,37 @@
 .active {
   color: var(--teal);
   border-bottom: 1px solid var(--teal);
+}
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .backToHome {
+    width: 100%;
+    margin-top: 5em;
+  }
+
+  .postWrapper {
+    width: 100%;
+  }
+
+  .section {
+    width: 100%;
+    position: relative;
+    top: 75px;
+  }
+
+  .bannerList {
+    flex-direction: column;
+  }
+
+  .listItem {
+    justify-content: center;
+  }
+
+  .imageLink {
+    display: none;
+  }
 }

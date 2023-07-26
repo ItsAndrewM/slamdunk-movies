@@ -25,3 +25,69 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.title {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* //////////////////////////////////////////////////////////////// */
+/* /////////////////////////mobile styling///////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .navList {
+    transition: all 0.3s ease-in-out;
+    display: none;
+    opacity: 0;
+    flex-direction: column;
+    position: fixed;
+    top: 75px;
+    background-color: white;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .visuallyShow {
+    opacity: 1;
+  }
+
+  .navList li {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbarWrapper {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+  }
+
+  .title {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    padding: 0;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .hamburger:hover {
+    color: var(--teal);
+  }
+}

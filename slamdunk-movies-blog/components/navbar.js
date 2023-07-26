@@ -5,8 +5,18 @@ import navbarStyles from "../styles/navbar.module.css";
 import utilStyles from "../styles/utils.module.css";
 import layoutStyles from "./layout.module.css"
 import { usePathname } from "next/navigation";
+import { HiMenu } from "react-icons/hi";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("clicked")
+    setShow(!show);
+  }
+
   const pathname = usePathname();
   return (
     <header className={navbarStyles.navbarWrapper}>
@@ -19,7 +29,11 @@ const Navbar = () => {
         />
       </Link>
       <div className={navbarStyles.container}>
-        <ul className={navbarStyles.navList}>
+        <button onClick={handleClick} className={navbarStyles.hamburger}>
+          <HiMenu size={40} />
+        </button>
+        <h1 className={navbarStyles.title}>Slam Dunk Movies</h1>
+        <ul className={!show ? `${navbarStyles.navList}` : `${navbarStyles.navList} ${navbarStyles.show} ${navbarStyles.visuallyShow}`}>
           <li className={navbarStyles.listItem}>
             <Link href={"/"} className={pathname == "/" ? layoutStyles.active : layoutStyles.link}>Home</Link>
           </li>
