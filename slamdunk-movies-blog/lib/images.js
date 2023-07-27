@@ -35,25 +35,7 @@ export const getSortedImageData = () => {
 
 export const getAllImageIds = () => {
   const fileNames = fs.readdirSync(imageDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
-  const allImageData = getSortedImageData();
   return fileNames.map((fileName) => {
-    const found = allImageData.find((pic) => {
-      return pic.id === fileName.replace(/\.md$/, "");
-    });
     return {
       params: {
         id: fileName.replace(/\.md$/, ""),

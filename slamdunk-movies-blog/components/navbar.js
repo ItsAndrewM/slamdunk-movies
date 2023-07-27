@@ -29,10 +29,10 @@ const Navbar = () => {
         />
       </Link>
       <div className={navbarStyles.container}>
+        <h1 className={navbarStyles.title}>Slam Dunk Movies</h1>
         <button onClick={handleClick} className={navbarStyles.hamburger}>
           <HiMenu size={40} />
         </button>
-        <h1 className={navbarStyles.title}>Slam Dunk Movies</h1>
         <ul className={!show ? `${navbarStyles.navList}` : `${navbarStyles.navList} ${navbarStyles.show} ${navbarStyles.visuallyShow}`}>
           <li className={navbarStyles.listItem}>
             <Link href={"/"} className={pathname == "/" ? layoutStyles.active : layoutStyles.link}>Home</Link>

@@ -38,20 +38,6 @@ export const getSortedPostsData = () => {
 
 export const getAllPostIds = () => {
   const fileNames = fs.readdirSync(postsDirectory);
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   const allPostsData = getSortedPostsData();
   return fileNames.map((fileName) => {
     const found = allPostsData.find((post) => {

@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "aws-sdk": "^2.1424.0",
     "babel-plugin-macros": "^3.1.0",
     "babel-plugin-transform-react-styled-components-qa": "^2.1.0",
     "date-fns": "^2.30.0",

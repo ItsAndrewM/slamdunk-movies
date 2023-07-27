@@ -38,20 +38,6 @@ export const getSortedLegalData = () => {
 
 export const getAllLegalIds = () => {
     const fileNames = fs.readdirSync(legalDirectory);
-
-    // Returns an array that looks like this:
-    // [
-    //   {
-    //     params: {
-    //       id: 'ssg-ssr'
-    //     }
-    //   },
-    //   {
-    //     params: {
-    //       id: 'pre-rendering'
-    //     }
-    //   }
-    // ]
     return fileNames.map((fileName) => {
         return {
             params: {
