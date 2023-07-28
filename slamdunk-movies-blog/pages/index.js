@@ -8,17 +8,29 @@ import Script from "next/script";
 import layoutStyles from "../components/layout.module.css";
 import TopStories from "../components/topStories";
 import Post from "../components/post";
+import { getCineplexInTheatres } from "./api/in-theatres";
+import Movies from "../components/movies";
 
-export const getStaticProps = async () => {
+// export const getStaticProps = async () => {
+//   return {
+//     props: {
+//       allPostsData,
+//     },
+//   };
+// };
+
+export const getServerSideProps = async () => {
+  const moviesData = await getCineplexInTheatres();
   const allPostsData = getSortedPostsData();
   return {
     props: {
+      moviesData,
       allPostsData,
     },
   };
 };
 
-const Home = ({ allPostsData }) => {
+const Home = ({ allPostsData, moviesData }) => {
   return (
     <Layout home>
       <Head>
@@ -39,7 +51,9 @@ const Home = ({ allPostsData }) => {
               gtag('config', 'G-82XEENDSWT');`}
         </Script>
       </div>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}>
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}
+      >
         <h2 className={`${utilStyles.headingLg} ${utilStyles.sectionHeader}`}>
           Top Stories
         </h2>
@@ -67,21 +81,35 @@ const Home = ({ allPostsData }) => {
         </h2>
         <ul className={utilStyles.list}>
           {/* {allPostsData.map(({ id, date, title, index }) => ( */}
-          {allPostsData.slice(4, 9).map(({ id, date, title, genre, thumbnail }, index) => {
-            return (
-              <Post
-                id={id}
-                date={date}
-                title={title}
-                index={index}
-                genre={genre}
-                thumbnail={thumbnail}
-                key={index}
-              />
-            );
-          })}
+          {allPostsData
+            .slice(4, 9)
+            .map(({ id, date, title, genre, thumbnail }, index) => {
+              return (
+                <Post
+                  id={id}
+                  date={date}
+                  title={title}
+                  index={index}
+                  genre={genre}
+                  thumbnail={thumbnail}
+                  key={index}
+                />
+              );
+            })}
         </ul>
         <Link href={"/stories"}>More Stories →</Link>
+      </section>
+      <section
+        className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${layoutStyles.section}`}
+      >
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.sectionHeader}`}>
+          Now Playing
+        </h2>
+        <ul className={`${utilStyles.list} ${layoutStyles.bannerList}`}>
+          {moviesData.data.map((movie) => {
+            return <Movies data={movie} key={movie.id} />;
+          })}
+        </ul>
       </section>
     </Layout>
   );

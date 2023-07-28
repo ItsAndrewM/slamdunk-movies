@@ -76,3 +76,7 @@
 .spaceBetween {
   justify-content: space-between;
 }
+
+.smallGap {
+  gap: 1em;
+}
