@@ -3,7 +3,7 @@ import sdmovies from "../public/sdmovies.svg";
 import Image from "next/image";
 import navbarStyles from "../styles/navbar.module.css";
 import utilStyles from "../styles/utils.module.css";
-import layoutStyles from "./layout.module.css"
+import layoutStyles from "./layout.module.css";
 import { usePathname } from "next/navigation";
 import { HiMenu } from "react-icons/hi";
 import { useState } from "react";
@@ -13,9 +13,8 @@ const Navbar = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    console.log("clicked")
     setShow(!show);
-  }
+  };
 
   const pathname = usePathname();
   return (
@@ -33,21 +32,68 @@ const Navbar = () => {
         <button onClick={handleClick} className={navbarStyles.hamburger}>
           <HiMenu size={40} />
         </button>
-        <ul className={!show ? `${navbarStyles.navList}` : `${navbarStyles.navList} ${navbarStyles.show} ${navbarStyles.visuallyShow}`}>
+        <ul
+          className={
+            !show
+              ? `${navbarStyles.navList}`
+              : `${navbarStyles.navList} ${navbarStyles.show} ${navbarStyles.visuallyShow}`
+          }
+        >
           <li className={navbarStyles.listItem}>
-            <Link href={"/"} className={pathname == "/" ? layoutStyles.active : layoutStyles.link}>Home</Link>
+            <Link
+              href={"/"}
+              className={
+                pathname == "/" ? layoutStyles.active : layoutStyles.link
+              }
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href={"/stories"} className={pathname == "/stories" ? layoutStyles.active : layoutStyles.link}>Stories</Link>
+            <Link
+              href={"/stories"}
+              className={
+                pathname == "/stories" ? layoutStyles.active : layoutStyles.link
+              }
+            >
+              Stories
+            </Link>
           </li>
           <li>
-            <Link href={"/stories/movies"} className={pathname == "/stories/movies" ? layoutStyles.active : layoutStyles.link}>Movies</Link>
+            <Link
+              href={"/stories/movies"}
+              className={
+                pathname == "/stories/movies"
+                  ? layoutStyles.active
+                  : layoutStyles.link
+              }
+            >
+              Movies
+            </Link>
           </li>
           <li>
-            <Link href={"/stories/comics"} className={pathname == "/stories/comics" ? layoutStyles.active : layoutStyles.link}>Comics</Link>
+            <Link
+              href={"/stories/comics"}
+              className={
+                pathname == "/stories/comics"
+                  ? layoutStyles.active
+                  : layoutStyles.link
+              }
+            >
+              Comics
+            </Link>
           </li>
           <li>
-            <Link href={"/stories/tv-shows"} className={pathname == "/stories/tv-shows" ? layoutStyles.active : layoutStyles.link}>TV Shows</Link>
+            <Link
+              href={"/stories/tv-shows"}
+              className={
+                pathname == "/stories/tv-shows"
+                  ? layoutStyles.active
+                  : layoutStyles.link
+              }
+            >
+              TV Shows
+            </Link>
           </li>
         </ul>
       </div>
